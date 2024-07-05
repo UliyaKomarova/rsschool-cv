@@ -1,0 +1,159 @@
+/*
+@import url("fontMontserrat.css");
+@import url("fontRoboto.css");
+*/
+
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+a {
+  position: relative;
+  transition: color 0.3s;
+  text-decoration: none;
+  color: #03307c;
+}
+
+a:hover {
+  color: #a64500;
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #03307c;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  background: rgb(238, 174, 202);
+  background: linear-gradient(
+    90deg,
+    rgba(238, 174, 202, 0.4) 0%,
+    rgba(148, 187, 233, 0.4) 100%
+  );
+}
+
+.container {
+  display: block;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.nav {
+  padding: 0 0 50px;
+}
+
+.nav-list {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px -20px 0;
+  padding: 0;
+  align-items: center;
+  list-style: none;
+}
+
+.nav-link {
+  padding: 0 20px;
+  line-height: 50px;
+}
+
+.main-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.section {
+  width: 47%;
+  padding: 0 0 50px;
+}
+
+@media (max-width: 768px) {
+  .section {
+    width: 100%;
+  }
+}
+
+.section-image {
+  width: 300px;
+  outline: 2px solid #ffe473;
+  outline-offset: -10px;
+}
+
+.section-title {
+  font-size: 18px;
+  font-weight: 600;
+  border-bottom: 2px solid rgb(106, 149, 223, 0.5);
+  margin: 0 0 15px;
+}
+
+.section-title.name {
+  font-size: 32px;
+  letter-spacing: 4px;
+  font-weight: 500;
+  border: none;
+}
+
+.section-content {
+  text-align: justify;
+}
+
+.section-content pre {
+  margin: 0;
+  padding: 0;
+}
+
+.section-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.section-list-item {
+  margin: 0;
+  padding: 0;
+}
+
+.footer {
+  padding: 20px 0;
+  border-top: 2px solid #ffe473;
+}
+
+.footer .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-section {
+  display: inline-block;
+}
+
+.footer-link {
+  display: inline-block;
+  padding: 10px 0;
+}
+
+.footer-link.logo {
+  width: 50px;
+  height: 50px;
+  background: no-repeat center/100% url("../assets/img/logo.svg");
+}
