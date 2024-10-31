@@ -98,6 +98,11 @@ body {
   outline-offset: -10px;
 }
 
+.section-image + h2 {
+  margin: 0;
+  font-size: 0;
+}
+
 .section-title {
   font-size: 18px;
   font-weight: 600;
