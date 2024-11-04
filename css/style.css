@@ -98,6 +98,11 @@ body {
   outline-offset: -10px;
 }
 
+.section-image + h2 {
+  margin: 0;
+  font-size: 0;
+}
+
 .section-title {
   font-size: 18px;
   font-weight: 600;
@@ -156,4 +161,5 @@ body {
   width: 50px;
   height: 50px;
   background: no-repeat center/100% url("../assets/img/logo.svg");
+  font-size: 0;
 }
