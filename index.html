@@ -1,22 +1,20 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/style.css" />
-    <link rel="icon" href="assets/favicon.ico" />
+<link lang="en">
+  <meta>
+    <meta charset="UTF-8"></meta>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"></meta>
+    <link rel="stylesheet" href="css/style.css"></link>
+    <link rel="icon" href="assets/favicon.ico"></link>
 
     <!-- fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com"></link>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin></link>
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
-      rel="stylesheet"
-    />
+      rel="stylesheet"></link>
     <link
       href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
-      rel="stylesheet"
-    />
+      rel="stylesheet"></link>
     <!-- /fonts -->
 
     <title>CV</title>
@@ -111,36 +109,38 @@
           <h2 class="section-title" id="code">Code</h2>
           <div class="section-content">
             <pre>
-const assert = require("chai").assert;
-
-describe("Multiply", () => {
-  it("fixed tests", () => {
-    assert.strictEqual(multiply(1,1), 1);
-    assert.strictEqual(multiply(2,1), 2);
-    assert.strictEqual(multiply(2,2), 4);
-    assert.strictEqual(multiply(3,5), 15); 
-    assert.strictEqual(multiply(5,0), 0);
-    assert.strictEqual(multiply(0,5), 0);
-    assert.strictEqual(multiply(0,0), 0); 
-  });
-});</pre
-            >
+function nbDig(n, d) {
+  let count = 0;
+  
+    for (let i = 0; i <= n; i++) {
+      let number = [...(i**2).toString()];
+      
+      for (let int of number) {
+        (int === d.toString()) ? count += 1 : count;
+      }    
+    }
+  return count;
+};
+            </pre>
           </div>
         </section>
 
         <section class="section">
           <h2 class="section-title" id="courses">Courses</h2>
-          <div class="section-content">
-            RS Schools Course «JavaScript/Front-end. Stage 0»
-          </div>
+          <div class="section-content">RS Schools Course «JavaScript/Front-end. Stage 0»</div>
         </section>
 
         <section class="section">
           <h2 class="section-title" id="projects">Projects</h2>
           <div class="section-content">
-            <a href="https://uliyakomarova.github.io/rsschool-cv/cv"
-              >CV Markdown</a
-            >
+            <ul class="section-list">
+              <li class="section-list-item"><a href="https://uliyakomarova.github.io/rsschool-cv/cv">CV Markdown</a></li>
+              <li class="section-list-item"><a href="https://uliyakomarova.github.io/cssMemeSlider/cssMemeSlider/">CSS meme slider</a></li>
+              <li class="section-list-item"><a href="https://rolling-scopes-school.github.io/uliyakomarova-JSFEPRESCHOOL2024Q2/js30-audio-player/">Audio player</a></li>
+              <li class="section-list-item"><a href="https://rolling-scopes-school.github.io/uliyakomarova-JSFEPRESCHOOL2024Q2/js30-image-gallery/">Image gallery</a></li>
+              <li class="section-list-item"><a href="https://rolling-scopes-school.github.io/uliyakomarova-JSFEPRESCHOOL2024Q2/js30-random-game/">Game 2048</a></li>
+              <li class="section-list-item"><a href="https://rolling-scopes-school.github.io/uliyakomarova-JSFEPRESCHOOL2024Q2/shelter/pages/main/">Shelter</a></li>
+            </ul>
           </div>
         </section>
 
