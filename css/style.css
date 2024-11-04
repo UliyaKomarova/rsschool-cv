@@ -161,4 +161,5 @@ body {
   width: 50px;
   height: 50px;
   background: no-repeat center/100% url("../assets/img/logo.svg");
+  font-size: 0;
 }
